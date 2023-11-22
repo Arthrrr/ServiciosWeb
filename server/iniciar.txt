@@ -1,0 +1,1 @@
+Para iniciar el server, se tiene que ejecutar el comando "node server.js"
