@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('Recursos/Portada.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Roboto', Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        #header {
+            margin: auto;
+            max-width: 1400px;
+            font-family: 'Roboto', Helvetica, sans-serif;
+            position: relative;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .nav {
+            text-align: center; 
+            flex: 1;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        .nav > li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .nav li a {
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            padding: 30px 20px;
+            display: block;
+        }
+
+        .nav li a:hover {
+            background-color: #004AAD;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+            right: 0; 
+            top: 100%;
+        }
+
+        .nav li:hover > ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -170px;
+            top: 0px;
+        }
+
+        #backend-btn,
+        #login-btn {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <ul class="nav">
+            <li>
+                <a href="">Seguridad</a>
+                <ul>
+                    <li><a href="crearUsuarios.html">Crear usuarios</a></li>
+                    <li><a href="cambiarContrasena.html">Contrasena</a></li>
+                    <li><a href="">Ver usuarios</a></li>
+                    <li><a href="">Roles</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="">Administracion</a>
+                <ul>
+                    <li><a href="crearConsecutivos.html">Consecutivos</a></li>
+                    <li><a href="infopaises.html">Paises</a></li>
+                    <li><a href="infoaerolinea.html">Aerolineas</a></li>
+                    <li><a href="infopuertas.html">Puertas</a></li>
+                </ul>
+            </li>
+
+            <li><a href="">Consultas</a></li>
+        </ul>
+
+        <button id="backend-btn"><a href="RegistrarBackend.html">Backend</a></button>
+        <button id="login-btn">Inicio de Sesión</button>
+    </div>
+</body>
+</html>
