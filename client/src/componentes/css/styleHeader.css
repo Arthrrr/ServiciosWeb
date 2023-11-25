@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a{
+    font-weight: 500;
+    font-size: 20px;
+    
+    color: white;
+    
+} 
+
+li, a:link{
+    text-decoration: none;
+    color: black;
+}
+
+li, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.links{
+    list-style: none;
+    margin-left: -13%;
+     
+}
+
+.links li{
+display: inline-block;
+padding: 0px 10px;
+}
+
+.links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.links li a:hover {
+    color: pink;
+}
+
+
+
+
+header{
+    background: linear-gradient(to top, #ffffff -5%, #ff99cc 170%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+

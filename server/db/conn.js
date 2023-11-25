@@ -1,25 +1,38 @@
-const { sql } = require("mssql");
-const Db = process.env.ATLAS_URI;
-const client = new MongoClient(Db, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+   
+    var sql = require("mssql");
+
+    // config for your database
+    var config = {
+        user: 'proyecto',
+        password: '12345',
+        server: 'FIOSALAZAR\SQLEXPRESS', 
+        database: 'Proyecto' 
+    };
+
+    // connect to your database
+    sql.connect(config, function (err) {
+    
+        if (err) console.log(err);
+
+        // create Request object
+        var request = new sql.Request();
+           
+        // query to the database and get the records
+        request.query('select * from users', function (err, recordset) {
+            
+            if (err) console.log(err)
+
+            // send records as a response
+            res.send(recordset);
+            
+        });
+    });
 });
- 
-var _db;
- 
-module.exports = {
-  connectToServer: function (callback) {
-    client.connect(function (err, db) {
-      if (db)
-      {
-        _db = db.db("proyectoweb");
-        console.log("Successfully connected to MongoDB."); 
-      }
-      return callback(err);
-         });
-  },
- 
-  getDb: function () {
-    return _db;
-  },
-};
+
+var server = app.listen(3000, function () {
+    console.log('Server is running..');
+});

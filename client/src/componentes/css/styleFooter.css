@@ -1,0 +1,26 @@
+footer{
+    background: linear-gradient(to top, #ffffff -5%, #ff99cc 170%);
+    padding: 10px;
+    text-align: center;
+    color: rgb(88, 6, 54);   
+    font-family: 'Times New Roman', Times, serif;  
+    font-size: 20px;      
+}
+
+.company
+{
+    font-family: Belgium;
+    font-size: 40px;
+    color:rgb(88, 6, 54);
+}
+
+.contacto
+{
+    font-family: Belgium;
+    font-size: 40px;
+    color:rgb(88, 6, 54);
+}
+
+.footerImage{
+    margin-top: 4%;
+}

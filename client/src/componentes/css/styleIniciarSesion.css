@@ -1,0 +1,62 @@
+
+
+.form-cedula{
+    
+    position: center;
+    margin-top: 1%;
+    margin-left: 40%;
+
+}
+
+.form-contrasena{
+    
+    position: center;
+    margin-top: 2%;
+    margin-left: 40%;
+
+}
+
+.companyName{
+    font-family: 'Verdana';
+    font-size: larger;
+    margin-top: -16%;
+    margin-left: 40%;
+}
+
+.bienvenida{
+    font-family: 'Verdana';
+    font-size: larger;
+    margin-left: 40%;
+    
+}
+
+.florBlanca{
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-bottom: 7%;;
+}
+
+.florMorada{
+    margin-top: -13%;
+    margin-right: 0%;
+}
+
+.btnIngresar{
+    font-family: 'Serif';
+    font-size: 150%;
+    position: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    color: white;
+    background-color: black;
+    border-color: black;
+    display: inline-block;
+    padding: 5px 40px;
+    margin-left: 40%;
+}
+
+.registro{
+    list-style: none;
+    margin-left: 38%;
+    color: black;
+}

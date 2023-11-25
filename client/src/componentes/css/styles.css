@@ -1,0 +1,214 @@
+body 
+{ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+ 
+@font-face 
+{
+    font-family: Belgium ;
+    src: url(../fonts/BelgiumVictory.ttf);
+}
+
+.titulo1
+{
+    color:rgb(88, 6, 54);
+    text-align: center;
+    padding-top: 70px;
+    font-family: Belgium;
+    font-size: 60px;
+}
+  
+.texto
+{
+    color:rgb(88, 6, 54);
+    font-size: 20px;
+    text-align: start;
+}
+.contenido{
+    text-align: center;
+    margin-left: -5%;
+    margin-right: 30%;
+    padding-right: 0%;
+    
+
+}
+
+p
+{
+    color:rgb(88, 6, 54);
+    font-size: 25px;
+    text-align: left;
+    padding-left: 36%;
+    padding-right: 8%;
+}
+
+.p1{
+    color: black;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+.img2{
+    position: center;
+}
+
+h1 
+{
+    color: rgb(179, 30, 146);
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    font-size: 30px;
+    padding: 5px;
+}
+
+h2
+{
+    color: rgb(179, 30, 146);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: start;
+    font-size: 25px;
+    padding: 5px;
+}
+
+h3
+{
+    color: rgb(179, 30, 146);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: start;
+    font-size: 20px;
+    padding: 5px;
+}
+
+hr 
+{
+    height: 4px;
+    width: 50%;
+    background-color: rgb(255, 0, 255);
+}
+
+.btnCompra{
+    font-family: 'Serif';
+    font-size: 130%;
+    position: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    color: white;
+    background-color: rgb(204, 35, 35);
+    border-color: black;
+    display: inline-block;
+    padding: 5px 40px;
+    margin-left: 1%;
+}
+
+.form-cedula{
+    
+    position: center;
+    margin-top: 10%;
+    margin-left: 60%;
+
+}
+
+/*******CARRUSEL*******/
+
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+    height: 200px;
+    width: 300%;
+}
+
+#carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+}
+.imagenes{
+    height: 440px;
+    width: 100%;
+}
+.carrusel-elemento {
+    float: left;
+    width: 33.333%;
+}
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+
+  
+}
